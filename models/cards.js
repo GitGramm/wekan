@@ -2172,7 +2172,6 @@ if (Meteor.isServer) {
             dueAt: doc.dueAt,
             endAt: doc.endAt,
             assignees: doc.assignees,
-            
           };
         }),
       });
@@ -2209,6 +2208,10 @@ if (Meteor.isServer) {
           _id: doc._id,
           title: doc.title,
           description: doc.description,
+          startAt:doc.startAt,
+          dueAt: doc.dueAt,
+          endAt: doc.endAt,
+          assignees: doc.assignees,
         };
       }),
     });
